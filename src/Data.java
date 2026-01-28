@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Data {
+public class Data { //Read in CSV and store into a hashmap
     HashMap<String, PassengerInfo> map;
     String filename;
 
@@ -23,8 +23,8 @@ public class Data {
                 String line = scanner.nextLine();
                 String[] values = line.split(",");
 
-                if (values[0].equals("Survived")) {
-                    continue; // first line
+                if (values[0].equals("Survived")) { //The first row of CSV is the header row
+                    continue; 
                 }
 
                 PassengerInfo passengerInfo = new PassengerInfo(values);

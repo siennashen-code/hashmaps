@@ -1,4 +1,4 @@
-public class Survivorship {
+public class Survivorship { //Survivorship data for each key in survivorshipMap
     double total;
     double survivors;
     int percent_survived;
